@@ -1,0 +1,84 @@
+  h1
+  {
+    color: green;
+    font-family: Arial;
+    font-size: 210%;
+    text-align: center;
+  }
+
+  .calendar
+  {
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    float: right;
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: lime;
+    margin: 10px;
+  }
+  
+  .prev-month-btn
+  {
+    float: left;
+  }
+  
+  .next-month-btn
+  {
+    float: right;
+  }
+  
+  .month-header-container
+  {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .month-header
+  {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .month-grid
+  {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+  }
+
+  .day
+  {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  .nav-arrows
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .date-picker
+  {
+    display: none;
+    position: middle;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .date-picker button
+  {
+    margin-top: 5px;
+  }
+  
+  .display-btn
+  {
+    margin: 10px;
+  }

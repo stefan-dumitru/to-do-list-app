@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color:lightblue">
+
+<link rel="stylesheet" href="To-Do List Project.css">
+
+<h1>To-Do List</h1>
+
+<input type="text" id="newTask" value="" placeholder="Add a new task">
+<button id="0" onclick="addTask(this.id)">Add Task</button>
+
+<button class="display-btn" onclick="displayTasksForDay()">Display tasks for a day</button>
+<button class="display-btn" onclick="displayAllTasks()">Display all tasks</button>
+<button class="display-btn" onclick="clearLocalStorage()">Clear data storage</button>
+
+<div id="pendingTasks">
+  <h2>Pending Tasks</h2>
+  <ul id="pendingTaskList"></ul>
+</div>
+<div id="completedTasks">
+  <h2>Completed Tasks</h2>
+  <ul id="completedTaskList"></ul>
+</div>
+
+<div class="calendar" id="calendar">
+
+  <div class="month-header-container">
+	<button class="prev-month-btn" id="prevMonthBtn" onclick="prevMonth()">◄</button>
+    <button class="next-month-btn" id="nextMonthBtn" onclick="nextMonth()">►</button>
+    <h2 class="month-header" id="monthHeader"></h2>
+  </div>
+  <div class="month-grid" id="monthGrid"></div>
+  
+<div id="datePicker" class="date-picker">
+  <input type="date" id="datePickerInput">
+  <button onclick="updateDate()">Set Date</button>
+</div>
+
+</div>
+
+<script src="To-Do List Project.js"></script>
+
+</body>
+</html>
